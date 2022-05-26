@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #if 0
 //550 11¹ø¹®Á¦?
@@ -83,5 +84,39 @@ int main() {
 	}
 	A[l] = '\0';
 	printf("%s", A);
+}
+#endif
+
+#if 0
+//1231
+#include<ctype.h>
+int main() {
+	char a[100][100];
+	int n;
+	scanf("%d", &n);
+	for (int i = 0; i <= n; i++) {
+		gets(a[i]);
+		//printf("%d %s\n", i, a[i]);
+	}
+	for (int i = 0; i <= n; i++) {
+		for (int j = 0; j < 100; j++) {
+			if (a[i][j] == '\0')break;
+			if (isupper(a[i][j])) a[i][j] = tolower(a[i][j]);
+			else a[i][j] = toupper(a[i][j]);
+		}
+	}
+	for (int i = 1; i <= n; i++) {
+		printf("%s",a[i]);
+	}
+}
+#endif
+
+#if 0
+void fun(char* a[]) {
+	printf("%s", a);
+}
+int main() {
+	char arr[] = "abcdefg";
+	fun(arr);
 }
 #endif
