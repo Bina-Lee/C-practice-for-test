@@ -96,7 +96,7 @@ int main() {
 	scanf("%d", &n);
 	for (int i = 0; i <= n; i++) {
 		gets(a[i]);
-		//printf("%d %s\n", i, a[i]);
+		printf("%d %s\n", i, a[i]);
 	}
 	for (int i = 0; i <= n; i++) {
 		for (int j = 0; j < 100; j++) {
