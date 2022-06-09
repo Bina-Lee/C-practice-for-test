@@ -329,6 +329,94 @@ int main(void) {
 }
 #endif
 
-#if 1
+#if 0
+//1553
+struct AA {
+	int a;
+	int b;
+};
 
+struct AA* pAA = 0;
+int numAA = 0;
+
+//-------------- 위로는 수정금지 -----------
+
+void funAdd(int a, int b) {
+
+	// pAA와 numAA를 이용하여
+	// funAdd가 호출될 때마다, 기존 보다 1개 더 구조체를 저장할 수 있는 공간을 
+	// 동적으로 할당받아서, 새로운 구조체를 저장하는 코드를 저장하면 됨.
+
+
+}
+
+//---------------- 아래로는 수정금지 ------------
+
+int main(void) {
+
+	int a;
+	int b;
+	int c;
+
+	while (1) {
+		scanf("%d", &a);
+		if (a == -999) {
+			break;
+		}
+		scanf("%d", &b);
+		funAdd(a, b);
+	}
+
+	scanf("%d", &c);
+	printf("%d %d", pAA[c].a, pAA[c].b);
+	return 0;
+}
+#endif
+
+#if 1
+//마방진 제작
+#include<stdio.h>
+#include<stdlib.h>
+int main() {
+	int a;
+	int x, y;
+	scanf("%d", &a);
+
+	int** magic=NULL;
+
+	magic = (int**) malloc (sizeof(int*) * a);
+	
+	for (int i = 0; i < a; i++) magic[i] = (int*) malloc (sizeof(int) * a);
+
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < a; j++) {
+			magic[i][j] = 0;
+		}
+	}
+
+	for (int i = 0; i < (a * a); i++) {
+		if (i == 0) {
+			x = 0;
+			y = ((a - 1) / 2);
+			magic[x][y] = i + 1;
+			continue;
+		}
+		x = (x + a - 1) % a;
+		y = (y + a - 1) % a;
+		while (magic[x][y] != 0) {
+			x = (x + 2) % a;
+			y = (y + 1) % a;
+		}
+		magic[x][y] = i + 1;
+	}
+
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < a; j++) {
+			printf("%2d ", magic[i][j]);
+		}
+		printf("\n");
+	}
+	for (int i = 0; i < a; i++) free(magic[i]);
+	free(magic);
+}
 #endif
