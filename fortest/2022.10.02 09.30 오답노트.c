@@ -1,3 +1,6 @@
+//New Online Judge 1055
+//eseoj.selenium.or.kr
+
 #include <stdio.h>
 #include <stdlib.h>
 
