@@ -1,6 +1,16 @@
 //New Online Judge 1055
 //eseoj.selenium.or.kr
 
+//채점 번호 2690
+
+//채점결과 : Runtime Error AC:67%
+//동적할당을 받는 과정에서 시간이 제체된 것으로 파악됨
+
+//체점결과 세부사항
+//xplaination
+//Segmentation fault : 배열 크기를 벗어난 위치에 접근했거나, 포인터를 잘 못 사용하였거나, 접근이 제한된 메모리 영역에 접근했습니다.
+//그러면 새 OJ에서 동적할당은 사용하지 못하는건가요..?
+
 #include <stdio.h>
 #include <stdlib.h>
 
