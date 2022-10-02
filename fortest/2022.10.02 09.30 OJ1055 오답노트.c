@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 //New Online Judge 1055
 //eseoj.selenium.or.kr
 
