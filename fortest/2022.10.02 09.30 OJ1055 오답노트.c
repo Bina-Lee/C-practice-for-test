@@ -34,7 +34,7 @@ int main() {
     int** result = (int**)malloc(sizeof(int*) * a);
     for (int i = 0; i < a; i++)result[i] = (int*)malloc(sizeof(int) * d);
 
-    for (int i = 0; i < a; i++)for (int j; j < d; j++)result[i][j] = 0;
+    for (int i = 0; i < a; i++)for (int j=0; j < d; j++)result[i][j] = 0;
 
     for (int i = 0; i < a; i++)for (int j = 0; j < d; j++)for (int k = 0; k < b; k++)result[i][j] = result[i][j] + arr1[i][k] * arr2[k][j];
 

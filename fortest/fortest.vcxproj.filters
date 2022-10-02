@@ -30,7 +30,7 @@
     <ClCompile Include="2022.06.09. 2차 기말고사 대비.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2022.10.02 09.30 오답노트.c">
+    <ClCompile Include="2022.10.02 09.30 OJ1055 오답노트.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
