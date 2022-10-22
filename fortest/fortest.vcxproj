@@ -155,7 +155,10 @@
     <ClCompile Include="2022.06.09. 2차 기말고사 대비.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="2022.10.02 09.30 OJ1055 오답노트.c" />
+    <ClCompile Include="2022.10.02 09.30 OJ1055 오답노트.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2022.10.22 cp2 7주차 과제.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
