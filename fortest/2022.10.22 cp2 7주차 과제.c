@@ -29,7 +29,7 @@ int main() {
 }
 #endif
 
-#if 1
+#if 0
 void swqp(int* x, int* y, int z[]) {
 	int temp = *x;
 	*x = *y;
